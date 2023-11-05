@@ -9,7 +9,7 @@ module.exports = function (grunt) {
           content: ['*.html', 'src/*.html', 'assets/js/*.js', '*.js'],
         },
         files: {
-          "dist/assets/css/style.css": ["src/assets/css/style-ready.css"],
+          "public/assets/css/style.css": ["src/assets/css/style-ready.css"],
         },
       },
     },
@@ -97,10 +97,10 @@ module.exports = function (grunt) {
       main: {
         files: [
           // includes files within path
-          { expand: true, cwd: "src/", src: ["*.html"], dest: "dist/" },
-          { expand: true, cwd: "src/", src: ["assets/css/min/*.min.css"], dest: "dist/" },
-          { expand: true, cwd: "src/", src: ["assets/js/min/*.min.js"], dest: "dist/" },
-          { expand: true, cwd: "src/", src: ["img/**/*"], dest: "dist/" },
+          { expand: true, cwd: "src/", src: ["*.html"], dest: "public/" },
+          { expand: true, cwd: "src/", src: ["assets/css/min/*.min.css"], dest: "public/" },
+          { expand: true, cwd: "src/", src: ["assets/js/min/*.min.js"], dest: "public/" },
+          { expand: true, cwd: "src/", src: ["img/**/*"], dest: "public/" },
         ],
       },
     },
