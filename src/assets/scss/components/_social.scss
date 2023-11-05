@@ -1,0 +1,41 @@
+@use "../abstracts" as *;
+.instagram--photos {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.instagram--photos img {
+  aspect-ratio: 1 / 1;
+  max-width: 25%;
+  @media screen and (max-width: 768px) {
+    max-width: 50%;
+
+  }
+}
+
+.social--wrapper {
+  display: grid;
+  place-items: center;
+  margin-block: 4rem;
+  h2 {
+    font-size: 3rem;
+    max-width: 51rem;
+  }
+  @media screen and (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 87%;
+  margin-inline: auto;
+  }
+
+  @media screen and (max-width: 768px) {
+    h2 {
+      font-size: 2rem;
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+    img {
+      max-width: 8rem;
+    }
+  }
+}

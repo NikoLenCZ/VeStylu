@@ -1,0 +1,167 @@
+@use "../abstracts" as *;
+
+header:not(article > header) {
+  position: relative;
+  overflow: hidden;
+  padding-inline: 0;
+  width: 100%;
+  z-index: 500;
+
+  @media screen and (max-width: 992px) {
+    height: 100vh;
+  }
+
+}
+
+nav {
+
+  z-index: 999;
+  padding: 1.6rem;
+
+  @media (min-width: 992px) {
+    position: relative;
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: 1fr 5fr;
+
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--color-light);
+    padding: 1.5rem 1rem;
+    font-size: 3.3rem;
+    font-weight: 600;
+    transition: color 0.2s ease-in;
+    @media (min-width: 992px) {
+      font-size: 2.3rem;
+    }
+  }
+
+  a:hover {
+    color: $color-primary;
+    cursor: pointer;
+  }
+}
+
+.navbar-header {
+  position: relative;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar-brand {
+  top: 1rem;
+  left: 1rem;
+  width: 5rem;
+  height: 5rem;
+  padding: 1rem;
+  margin: 0;
+  transition: all .4s ease-in-out;
+  img {
+    border-radius: 50%;
+  }
+
+
+  @media (min-width: 992px) {
+    padding: 1.5rem 0 0 1rem;
+    font-size: 2.2rem;
+    margin: 0;
+    width: 12.5rem;
+    height: auto;
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 3rem;
+  }
+
+  &:hover {
+    text-decoration: none;
+    scale: 1.1;
+  }
+}
+
+.navbar-icon {
+  color: $color-primary;
+  font-size: 3rem;
+  text-align: center;
+  box-sizing: border-box;
+  // padding: .9rem 1.3rem;
+  width: 4rem;
+  height: 100%;
+  cursor: pointer;
+
+  & img {
+    transition: all 1s ease;
+  }
+
+  @media (min-width: 992px) {
+    display: none;
+  }
+}
+
+
+.navbar-title {
+  padding-right: 0.2rem;
+  font-weight: 600;
+}
+
+.nav-list {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  text-align: center;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  line-height: 3.75em;
+  transition: all 1.1s ease;
+  background-color: rgba($color-secondary, .95);
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  @media screen and (max-width: 992px) {
+    left: 100%;
+
+    &.show {
+      left: 0;
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    justify-content: end;
+    flex-direction: row;
+
+  }
+
+
+
+  & li {
+    display: inline-block;
+    width: 100%;
+    padding: 1.7rem;
+    text-align: center;
+
+    @media (min-width: 992px) {
+      width: fit-content;
+    }
+  }
+
+  @media (min-width: 992px) {
+    height: fit-content;
+    display: flex;
+    position: relative;
+    top: 0;
+    background-color: transparent;
+  }
+
+  @media (min-width: 1200px) {
+    display: flex;
+    max-height: 100vh;
+  }
+}

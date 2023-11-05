@@ -1,0 +1,129 @@
+@use "../abstracts" as *;
+
+.services {
+  position: relative;
+  width: 100%;
+
+  @media (min-width: 1200px) {
+    width: 75%
+  }
+
+  .decoration {
+    position: absolute;
+    top: 3rem;
+    right: 0;
+    max-height: 6rem;
+  }
+
+  @media (min-width: 992px) {
+    .decoration {
+      top: 40%;
+      left: -10%;
+      max-height: 100%;
+    }
+  
+  }
+
+
+}
+
+.grid-services {
+  padding: 2rem 0;
+
+  @media (min-width: 768px) {
+    padding: 3rem 0;
+  }
+}
+
+// other services
+
+.btn--wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0;
+  width: 100%;
+}
+
+section.services {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 5rem;
+  h2 {
+    width: 100%;
+  }
+}
+
+
+
+.service--text {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.service--price {
+  font-size: 2.8rem;
+  font-weight: 700;
+  position: relative;
+  display: inline-block;
+  color: $color-secondary;
+}
+
+.background-skew {
+  transform: skew(-30deg);
+  background: $color-primary;
+  display: inline-block;
+  padding: 1rem 3rem;
+}
+
+.text-straight {
+  display: inline-block;
+  transform: skew(30deg);
+}
+
+
+.service--footer {
+  text-align: center;
+}
+
+@media (min-width: 992px) {
+
+  article.service--wrapper {
+    header, section, footer {
+    padding-inline: 5.6rem;
+    }
+  }
+
+article.service--wrapper {
+  width: 50%;
+  margin-block: 4rem;
+
+  &.midle {
+    width: 100%;
+    header, section, footer {
+      width: 40%;
+      margin-inline: auto;
+    }
+
+  }
+}
+
+}
+
+
+// other services
+
+.other-services {
+  img {
+    transform: rotate(270deg);
+    @media screen and (max-width: 768px) {
+        max-width: 6rem;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    article {
+      max-width: 40rem;
+    }
+  }
+}

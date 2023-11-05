@@ -1,0 +1,23 @@
+@use "../abstracts" as *;
+
+section.contact {
+  padding: 3rem 1rem;
+
+  @media (min-width: 992px) {
+    padding: 5rem 1rem;
+  }
+}
+
+
+address {
+  font-style: normal;
+}
+
+.address--wrapper {
+  min-width: 21rem;
+}
+@media screen and (max-width: 768px) {
+  .address--wrapper {
+    min-width: 27rem;
+  }
+}
