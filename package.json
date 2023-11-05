@@ -1,0 +1,29 @@
+{
+  "homepage": "https://NikoLenCZ.github.io/VeStylu",
+  "name": "vestylu",
+  "version": "1.0.0",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "NikoLenCZ",
+  "dependencies": {
+    "grunt": "^1.6.1",
+    "grunt-autoprefixer": "^3.0.4",
+    "grunt-contrib-clean": "^2.0.1",
+    "grunt-contrib-connect": "^3.0.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^4.0.0",
+    "grunt-contrib-uglify": "^5.2.2",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-purgecss": "^5.0.0",
+    "grunt-sass-scss": "^0.1.9",
+    "sass": "^1.69.5"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.0.0"
+  }
+}
