@@ -469,9 +469,13 @@ nav a:hover {
   z-index: -1;
 }
 .main--banner-wrapper h1, .main--banner-wrapper p {
-  max-width: 92rem;
   text-align: center;
   padding-inline: 1.6rem;
+}
+@media screen and (min-width: 992px) {
+  .main--banner-wrapper h1, .main--banner-wrapper p {
+    max-width: 80%;
+  }
 }
 .main--banner-wrapper .header--subheadline {
   font-size: 2.4rem;
@@ -787,4 +791,80 @@ form {
   border: 1px solid;
   color: hsl(184, 100%, 41%);
   margin-bottom: 2.5rem;
+}
+
+header.pricelist--header {
+  height: auto;
+}
+header.pricelist--header .main--banner-wrapper {
+  height: 250px;
+}
+@media screen and (min-width: 768px) {
+  header.pricelist--header .main--banner-wrapper {
+    height: 350px;
+  }
+}
+
+table {
+  border-collapse: collapse;
+}
+
+.price--lists-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .price--lists-wrapper {
+    gap: 7rem;
+  }
+}
+
+.price--list {
+  font-size: 1.6rem;
+  margin-block: 2rem;
+  width: 100%;
+}
+@media screen and (min-width: 1024px) {
+  .price--list {
+    width: 40%;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .price--list {
+    width: 29%;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .price--list {
+    width: 30%;
+  }
+}
+.price--list .price--headline {
+  font-size: 2rem;
+  line-height: 1.3;
+  color: hsl(184, 100%, 41%);
+  margin-bottom: 2rem;
+  text-align: left;
+  text-transform: uppercase;
+}
+.price--list tbody td {
+  padding: 1.6rem 1rem;
+  text-align: left;
+  vertical-align: middle;
+}
+.price--list tbody td:first-child {
+  width: 60%;
+}
+.price--list tbody td:nth-child(2) {
+  text-align: right;
+}
+.price--list table, .price--list tbody tr {
+  border-bottom: 1px solid hsl(184, 100%, 41%);
+}
+@media screen and (min-width: 1200px) {
+  .price--list tbody td:first-child {
+    width: 70%;
+  }
 }
