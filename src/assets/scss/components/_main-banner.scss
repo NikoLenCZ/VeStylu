@@ -18,9 +18,11 @@
   }
 
   h1, p {
-    max-width: 92rem;
     text-align: center;
     padding-inline: 1.6rem;
+    @media screen and (min-width: 992px) {
+      max-width: 80%;
+    }
   }
 
   .header--subheadline {
