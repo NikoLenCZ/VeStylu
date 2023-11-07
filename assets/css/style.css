@@ -299,6 +299,7 @@ nav a:hover {
   z-index: 999;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .navbar-brand {
@@ -340,6 +341,9 @@ nav a:hover {
   width: 4rem;
   height: 100%;
   cursor: pointer;
+}
+.navbar-icon i {
+  font-size: 3rem;
 }
 .navbar-icon img {
   transition: all 1s ease;
