@@ -583,6 +583,7 @@ header:not(article > header) {
   padding-inline: 0;
   width: 100%;
   z-index: 500;
+  height: 750px;
 }
 @media screen and (max-width: 768px) {
   header:not(article > header) {
