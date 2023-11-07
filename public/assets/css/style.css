@@ -606,18 +606,28 @@ section.services h2 {
 .instagram--photos {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  gap: 2px;
 }
 
 .instagram--photos img {
   aspect-ratio: 1/1;
-  max-width: 25%;
+  max-width: 24.8%;
 }
 @media screen and (max-width: 768px) {
+  .instagram--photos img {
+    max-width: 49.7%;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .instagram--photos {
+    gap: 0;
+  }
   .instagram--photos img {
     max-width: 50%;
   }
 }
-
 .social--wrapper {
   display: grid;
   place-items: center;
