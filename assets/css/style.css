@@ -620,6 +620,14 @@ section.services h2 {
   }
 }
 
+@media screen and (max-width: 360px) {
+  .instagram--photos {
+    gap: 0;
+  }
+  .instagram--photos img {
+    max-width: 50%;
+  }
+}
 .social--wrapper {
   display: grid;
   place-items: center;
