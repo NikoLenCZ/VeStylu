@@ -1,15 +1,18 @@
 @use "../abstracts" as *;
 
-header.pricelist--header {
-  height: auto;
- .main--banner-wrapper {
-  height: 250px;
-  @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
+  header.pricelist--header {
+    height: auto;
+  }
+
+  .main--banner-wrapper {
     height: 350px;
-    
   }
 }
-}
+
+.pricelist--header h1 {
+  margin-bottom: 3rem;
+  }
 
 table {
   border-collapse: collapse;
@@ -22,7 +25,7 @@ table {
   justify-content: center;
   @media screen and (min-width: 768px) {
     gap: 7rem;
-    
+
   }
 }
 
@@ -50,7 +53,7 @@ table {
     margin-bottom: 2rem;
     text-align: left;
     text-transform: uppercase;
-  
+
   }
   tbody td {
   padding: 1.6rem 1rem;
@@ -74,5 +77,5 @@ table {
           width: 70%;
           }
       }
-      
+
 }

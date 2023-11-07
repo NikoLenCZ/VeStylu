@@ -584,7 +584,7 @@ header:not(article > header) {
   width: 100%;
   z-index: 500;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 768px) {
   header:not(article > header) {
     height: 100vh;
   }
@@ -594,7 +594,7 @@ nav {
   z-index: 999;
   padding: 1.6rem;
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   nav {
     position: relative;
     display: grid;
@@ -610,7 +610,7 @@ nav a {
   font-weight: 600;
   transition: color 0.2s ease-in;
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   nav a {
     font-size: 2.3rem;
   }
@@ -640,7 +640,7 @@ nav a:hover {
 .navbar-brand img {
   border-radius: 50%;
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .navbar-brand {
     padding: 1.5rem 0 0 1rem;
     font-size: 2.2rem;
@@ -674,7 +674,7 @@ nav a:hover {
 .navbar-icon img {
   transition: all 1s ease;
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .navbar-icon {
     display: none;
   }
@@ -689,7 +689,7 @@ nav a:hover {
   width: 100%;
   position: absolute;
   top: 0;
-  height: 100%;
+  height: 100vh;
   text-align: center;
   overflow: hidden;
   padding: 0;
@@ -703,7 +703,7 @@ nav a:hover {
   align-items: center;
   justify-content: center;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 768px) {
   .nav-list {
     left: 100%;
   }
@@ -711,7 +711,7 @@ nav a:hover {
     left: 0;
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
   .nav-list {
     justify-content: end;
     flex-direction: row;
@@ -723,12 +723,12 @@ nav a:hover {
   padding: 1.7rem;
   text-align: center;
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .nav-list li {
     width: fit-content;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .nav-list {
     height: fit-content;
     display: flex;
@@ -925,6 +925,11 @@ section.services h2 {
   position: relative;
   display: inline-block;
   color: hsl(0, 0%, 0%);
+}
+@media screen and (max-width: 768px) {
+  .service--price {
+    font-size: 1.8rem;
+  }
 }
 
 .background-skew {
@@ -1207,16 +1212,16 @@ form {
   color: #23d565;
 }
 
-header.pricelist--header {
-  height: auto;
-}
-header.pricelist--header .main--banner-wrapper {
-  height: 250px;
-}
 @media screen and (min-width: 768px) {
-  header.pricelist--header .main--banner-wrapper {
+  header.pricelist--header {
+    height: auto;
+  }
+  .main--banner-wrapper {
     height: 350px;
   }
+}
+.pricelist--header h1 {
+  margin-bottom: 3rem;
 }
 
 table {
