@@ -4,8 +4,6 @@
   "version": "1.0.0",
   "main": "Gruntfile.js",
   "scripts": {
-    "build": "grunt public",
-    "predeploy": "npm run build",
     "deploy": "gh-pages -d public"
   },
   "author": "",
