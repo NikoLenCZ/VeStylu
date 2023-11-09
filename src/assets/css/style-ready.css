@@ -1052,6 +1052,9 @@ address {
   .address--wrapper {
     min-width: 27rem;
   }
+  .grid-contact .social-contact {
+    width: 27rem;
+  }
 }
 footer:not(article > footer) {
   background-color: hsl(0, 0%, 0%);
@@ -1071,6 +1074,9 @@ footer:not(article > footer) {
 .social-contact {
   display: flex;
   gap: 1.6rem;
+}
+.social-contact a img {
+  width: 65px;
 }
 
 .nikolen,

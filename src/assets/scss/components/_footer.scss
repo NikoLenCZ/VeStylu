@@ -20,6 +20,9 @@ footer:not(article>footer) {
 .social-contact {
 display: flex;
 gap: 1.6rem;
+a img {
+  width: 65px;
+}
 }
 
 
