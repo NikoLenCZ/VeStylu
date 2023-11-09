@@ -918,7 +918,7 @@ nav a:hover {
 
 .main--banner-wrapper {
   width: 100%;
-  height: 700px;
+  height: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -1436,7 +1436,7 @@ form {
   color: #23d565;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   header.pricelist--header {
     height: auto;
   }
