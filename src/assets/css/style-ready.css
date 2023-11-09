@@ -585,7 +585,7 @@ header:not(article > header) {
   z-index: 500;
   height: 750px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   header:not(article > header) {
     height: 100vh;
   }
@@ -595,7 +595,7 @@ nav {
   z-index: 999;
   padding: 1.6rem;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   nav {
     position: relative;
     display: grid;
@@ -611,7 +611,7 @@ nav a {
   font-weight: 600;
   transition: color 0.2s ease-in;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   nav a {
     font-size: 2.3rem;
   }
@@ -641,7 +641,7 @@ nav a:hover {
 .navbar-brand img {
   border-radius: 50%;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .navbar-brand {
     padding: 1.5rem 0 0 1rem;
     font-size: 2.2rem;
@@ -675,7 +675,7 @@ nav a:hover {
 .navbar-icon img {
   transition: all 1s ease;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .navbar-icon {
     display: none;
   }
@@ -704,7 +704,7 @@ nav a:hover {
   align-items: center;
   justify-content: center;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .nav-list {
     left: 100%;
   }
@@ -712,7 +712,7 @@ nav a:hover {
     left: 0;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   .nav-list {
     justify-content: end;
     flex-direction: row;
@@ -724,12 +724,12 @@ nav a:hover {
   padding: 1.7rem;
   text-align: center;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .nav-list li {
     width: fit-content;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .nav-list {
     height: fit-content;
     display: flex;

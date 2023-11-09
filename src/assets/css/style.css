@@ -626,7 +626,7 @@ header:not(article > header) {
   z-index: 500;
   height: 750px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   header:not(article > header) {
     height: 100vh;
   }
@@ -636,7 +636,7 @@ nav {
   z-index: 999;
   padding: 1.6rem;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   nav {
     position: relative;
     display: grid;
@@ -654,7 +654,7 @@ nav a {
      -moz-transition: color 0.2s ease-in;
           transition: color 0.2s ease-in;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   nav a {
     font-size: 2.3rem;
   }
@@ -700,7 +700,7 @@ nav a:hover {
      -moz-border-radius: 50%;
           border-radius: 50%;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .navbar-brand {
     padding: 1.5rem 0 0 1rem;
     font-size: 2.2rem;
@@ -738,7 +738,7 @@ nav a:hover {
      -moz-transition: all 1s ease;
           transition: all 1s ease;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .navbar-icon {
     display: none;
   }
@@ -787,7 +787,7 @@ nav a:hover {
       -ms-flex-pack: center;
           justify-content: center;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .nav-list {
     left: 100%;
   }
@@ -795,7 +795,7 @@ nav a:hover {
     left: 0;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   .nav-list {
     -webkit-box-pack: end;
     -webkit-justify-content: end;
@@ -817,14 +817,14 @@ nav a:hover {
   padding: 1.7rem;
   text-align: center;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .nav-list li {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .nav-list {
     height: -webkit-fit-content;
     height: -moz-fit-content;
