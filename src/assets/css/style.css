@@ -795,10 +795,10 @@ nav a:hover {
             transform: translateX(100%);
   }
   .nav-list.show {
-    -webkit-transform: translateX(0);
-       -moz-transform: translateX(0);
-        -ms-transform: translateX(0);
-            transform: translateX(0);
+    -webkit-transform: translateX(-1.6rem);
+       -moz-transform: translateX(-1.6rem);
+        -ms-transform: translateX(-1.6rem);
+            transform: translateX(-1.6rem);
   }
 }
 @media screen and (min-width: 992px) {
