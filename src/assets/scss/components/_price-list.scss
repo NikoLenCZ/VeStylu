@@ -1,18 +1,23 @@
 @use "../abstracts" as *;
 
-@media screen and (min-width: 992px) {
-  header.pricelist--header {
-    height: auto;
+header.pricelist--header {
+  height: 450px;
+  @media screen and (max-width: 992px) {
+    height: 270px;
+
   }
-  
+  h1 {
+    font-size: 0;
+    position: absolute;
+    margin: 0;
+    text-indent: -9999px;
+    top: -999px;
+  }
+
   .main--banner-wrapper {
-    height: 350px;
+    height: 100%;
   }
 }
-
-.pricelist--header h1 {
-  margin-bottom: 3rem;
-  }
 
 table {
   border-collapse: collapse;
@@ -53,6 +58,7 @@ table {
     margin-bottom: 2rem;
     text-align: left;
     text-transform: uppercase;
+    font-weight: 700;
 
   }
   tbody td {

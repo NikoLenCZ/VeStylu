@@ -265,6 +265,12 @@ header:not(article > header) {
   }
 }
 
+.main--banner-wrapper {
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+
 nav {
   z-index: 999;
   padding: 1.6rem;
@@ -304,8 +310,6 @@ nav a:hover {
 }
 
 .navbar-brand {
-  top: 1rem;
-  left: 1rem;
   width: 5rem;
   height: 5rem;
   padding: 1rem;
@@ -314,6 +318,7 @@ nav a:hover {
 }
 .navbar-brand img {
   border-radius: 50%;
+  height: auto;
 }
 @media (min-width: 992px) {
   .navbar-brand {
@@ -321,12 +326,7 @@ nav a:hover {
     font-size: 2.2rem;
     margin: 0;
     width: 12.5rem;
-    height: auto;
-  }
-}
-@media (min-width: 1200px) {
-  .navbar-brand {
-    font-size: 3rem;
+    height: 12.5rem;
   }
 }
 .navbar-brand:hover {
@@ -357,7 +357,7 @@ nav a:hover {
 
 .nav-list {
   width: 100%;
-  position: absolute;
+  position: fixed;
   top: 0;
   height: 100vh;
   text-align: center;
@@ -375,7 +375,7 @@ nav a:hover {
 }
 @media screen and (max-width: 992px) {
   .nav-list {
-    left: 100%;
+    transform: translateX(100%);
   }
 }
 @media screen and (min-width: 992px) {
@@ -470,7 +470,7 @@ nav a:hover {
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.63);
   z-index: -1;
 }
 .main--banner-wrapper h1, .main--banner-wrapper p {
@@ -819,16 +819,23 @@ form {
   margin-bottom: 2.5rem;
 }
 
-@media screen and (min-width: 992px) {
+header.pricelist--header {
+  height: 450px;
+}
+@media screen and (max-width: 992px) {
   header.pricelist--header {
-    height: auto;
-  }
-  .main--banner-wrapper {
-    height: 350px;
+    height: 270px;
   }
 }
-.pricelist--header h1 {
-  margin-bottom: 3rem;
+header.pricelist--header h1 {
+  font-size: 0;
+  position: absolute;
+  margin: 0;
+  text-indent: -9999px;
+  top: -999px;
+}
+header.pricelist--header .main--banner-wrapper {
+  height: 100%;
 }
 
 table {
@@ -874,6 +881,7 @@ table {
   margin-bottom: 2rem;
   text-align: left;
   text-transform: uppercase;
+  font-weight: 700;
 }
 .price--list tbody td {
   padding: 1.6rem 1rem;
