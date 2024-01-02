@@ -1,0 +1,28 @@
+body.gdpr {
+
+  display: grid;
+  min-height: 100dvh;
+  height: 100%;
+
+  header {
+    height: auto;
+  }
+  main {
+    padding-inline: 1rem;
+  }
+  h1 {
+    text-align: center;
+    padding-inline: 1rem;
+  }
+
+  section {
+    max-width: 1140px;
+    margin-inline: auto;
+  }
+
+  footer {
+    max-height: fit-content;
+    margin-top: auto;
+  }
+
+}

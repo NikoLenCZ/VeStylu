@@ -1541,3 +1541,29 @@ table {
     width: 70%;
   }
 }
+
+body.gdpr {
+  display: grid;
+  min-height: 100dvh;
+  height: 100%;
+}
+body.gdpr header {
+  height: auto;
+}
+body.gdpr main {
+  padding-inline: 1rem;
+}
+body.gdpr h1 {
+  text-align: center;
+  padding-inline: 1rem;
+}
+body.gdpr section {
+  max-width: 1140px;
+  margin-inline: auto;
+}
+body.gdpr footer {
+  max-height: -webkit-fit-content;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+  margin-top: auto;
+}
